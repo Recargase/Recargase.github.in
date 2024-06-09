@@ -1,0 +1,128 @@
+body{
+    background-color: #06141b;
+}
+
+
+
+
+.imagee {
+    background-image: url("descarga (3).jpg");
+    background-position: center;
+    background-size: cover;
+    width: 200px; 
+    height: 280px;
+    border: 2px solid #E6398D; 
+     position: absolute; /* Position the image absolutely */
+        top: 25%; /* Set the top position to 50% */
+        left: 40.5%; /* Set the left position to 50% */
+        
+}
+
+
+.contenedorr:hover .imagee {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+    background-image: url("descarga (3).jpg"); /* Replace with your image path */
+    background-position: center;
+    background-size: cover;
+    width: 200px; 
+    height: 280px;
+    border: 2px solid #E6398D; 
+        position: absolute; /* Position the image absolutely */
+        top: 25%; /* Set the top position to 50% */
+        left: 40.5%; /* Set the left position to 50% */
+}
+
+
+
+
+
+.image {
+    background-image: url("ggggggggg.jpg");
+    background-position: center;
+    background-size: cover;
+    width: 200px; 
+    height: 280px;
+    border: 2px solid #E6398D; 
+     position: absolute; /* Position the image absolutely */
+        top: 25%; /* Set the top position to 50% */
+        left: 25%; /* Set the left position to 50% */
+        
+}
+
+
+.contenedor:hover .image {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+    background-image: url("ggggggggg.jpg"); /* Replace with your image path */
+    background-position: center;
+    background-size: cover;
+    width: 200px; 
+    height: 280px;
+    border: 2px solid #E6398D; 
+        position: absolute; /* Position the image absolutely */
+        top: 25%; /* Set the top position to 50% */
+        left: 25%; /* Set the left position to 50% */
+}
+
+
+
+
+
+
+.imageee {
+    background-image: url("descarga (4).jpg");
+    background-position: center;
+    background-size: cover;
+    width: 200px; 
+    height: 280px;
+    border: 2px solid #E6398D; 
+     position: absolute; /* Position the image absolutely */
+        top: 25%; /* Set the top position to 50% */
+        left: 56%; /* Set the left position to 50% */
+        
+}
+
+
+.contenedorrr:hover .imageee {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+    background-image: url("descarga (4).jpg"); /* Replace with your image path */
+    background-position: center;
+    background-size: cover;
+    width: 200px; 
+    height: 280px;
+    border: 2px solid #E6398D; 
+        position: absolute; /* Position the image absolutely */
+        top: 25%; /* Set the top position to 50% */
+        left: 56%; /* Set the left position to 50% */
+}
+
+
+
+
+
+.image-container { /* Optional container class */
+    position: absolute; /* Or use flexbox or grid */
+    top: 25%;
+    transition: transform 0.3s ease-in-out; /* Add transition for hover */
+  }
+  
+
+.image:hover, .imagee:hover, .imageee:hover {
+    transform: scale(1.3) translateX(50px); /* Zoom and move right on hover */
+    transition: transform 0.3s ease-in-out; /* Add transition for hover */
+  }
+  
+  .image:hover ~ .imageee, .imagee:hover ~ .image, .imageee:hover ~ .image {
+    transform: translateX(-50px); /* Move other images to the left */
+    transition: transform 0.3s ease-in-out; /* Add transition for hover */
+  }
+
+
+
+
+.contenedor:hover .image {
+  -webkit-transform: scale(1.3) translateX(-50px); /* Zoom and move to the left on hover */
+  transition: transform 0.3s ease-in-out; /* Maintain transition for hover effect */
+}
